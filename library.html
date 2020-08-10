@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <button class="open-button" onclick="openForm()">NEW BOOK</button>
+  <div id="container">  </div>
+<div class = "form-popup" id="myForm">
+    <form id="mainForm">
+      <label for="author">Author</label><br>
+      <input type="text" id="author" name="author" value=""><br>
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title" value=""><br>
+      <label for="pages">Number of Pages:</label><br>
+      <input type="text" id="pages" name="pages" value=""><br>
+      <label for="read">Did you read it?</label><br>
+      <input type="checkbox" id="read" name="read" value=""><br><br>
+      <input type="submit" value="Submit" id="submit">
+      <input type="submit" value="Cancel">
+    </form> 
+  </div>
+  <table id= "myTable">
+    <tHead>
+      <tr>
+        <th>Author</th>
+        <th>Title</th>
+        <th>Pages</th>
+        <th>Did you read it?</th>       
+         <th>Do You want to Remove?</th>
+
+      </tr>
+    </tHead>
+    <tBody id="datas">
+
+    </tBody>
+  </table>
+  <div class="card">
+    
+  </div>
+  
+
+  <script src="library.js"></script>
+</body>
+
+</html>
